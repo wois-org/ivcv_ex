@@ -43,4 +43,3 @@ If you found this library useful, dont forget to star it (on github) =)
 
 ![GitHub stars](https://img.shields.io/github/stars/wois-org/ivcv_ex?style=social)
 
-
