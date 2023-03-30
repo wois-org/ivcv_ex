@@ -2,7 +2,7 @@
 
 [![Docs](https://img.shields.io/badge/hex-docs-blue)](https://wois.hexdocs.pm/ivcv_ex/)
 
-IvcvEx is an unofficial client library [IVCV](https://ivcv.eu/), so you can request video analysis and later fetch the results.
+IvcvEx is an unofficial client library for [IVCV](https://ivcv.eu/), so you can request video analysis and later fetch the results.
 
 You only need to set your authentication api key in the config file and enjoy the feature of IVCV withou having to configure http calls, ensure urls or dealing with tricky configurations. Use your time in the business logic of your app.
 
