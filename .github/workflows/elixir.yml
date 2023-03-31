@@ -59,8 +59,8 @@ jobs:
         key: ${{ runer.os }}-mix-${{ hashFiles('**/mix.lock') }}
         restore-keys: ${{ runner.os }}-mix-
     - if: ${{ steps.cache-deps.outputs.cache-hit != 'true' }}
-        name: Install dependencies        
-        continue-on-error: true
-        run: mix deps.get
+      name: Install dependencies        
+      continue-on-error: true
+      run: mix deps.get
     - name: Release and publish
       run: mix version.next
