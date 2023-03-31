@@ -3,6 +3,7 @@ import Config
 config :version_release,
   tag_prefix: "v",
   hex_publish: true,
+  force_publish: true,
   changelog: %{
     creation: :manual,
     minor_patterns: ["added", "changed", "fixed", "fix"],
