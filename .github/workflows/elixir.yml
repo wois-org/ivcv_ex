@@ -43,6 +43,8 @@ jobs:
     needs: [build]
     name: Publish to Hex
     runs-on: ubuntu-latest
+    env:
+      HEX_API_KEY: ${{ secrets.HEX_API_KEY }}
 
     steps:
     - uses: actions/checkout@v3
@@ -51,6 +53,10 @@ jobs:
       with:
         elixir-version: '1.14.3'
         otp-version: '25.2'
+    - name: Configure bot
+        run: |
+          git config --global user.name 'vois-circleci-bot'
+          git config --global user.email 'circleci.voisbot@null.net'
     - name: Restore dependencies cache
       id: cache-deps
       uses: actions/cache@v3
