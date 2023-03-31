@@ -48,8 +48,8 @@ defmodule IvcvEx do
     body
     |> Jason.decode!()
     |> case do
-      %{"replyId" => reply_id} ->
-        {:ok, reply_id}
+      %{"resultId" => result_id} ->
+        {:ok, result_id}
 
       res ->
         Logger.error(
