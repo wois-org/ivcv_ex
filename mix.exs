@@ -34,7 +34,6 @@ defmodule IvcvEx.MixProject do
   defp package() do
     [
       name: "ivcv_ex",
-      organization: "wois",
       files: ~w(lib .formatter.exs mix.exs README* LICENSE CHANGELOG*),
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/wois-org/ivcv_ex"}
