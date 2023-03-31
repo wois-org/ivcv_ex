@@ -4,7 +4,7 @@ defmodule IvcvEx.MixProject do
   def project do
     [
       app: :ivcv_ex,
-      version: "0.5.4-alpha.0",
+      version: "0.5.4",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
