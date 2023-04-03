@@ -47,7 +47,9 @@ defmodule IvcvEx.MixProject do
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:excoveralls, "0.16.1", only: :test},
-      {:version_release, "0.4.0", only: [:test, :dev], runtime: false},
+      {:version_release,
+       git: "git@github.com:benitezhm/elixir-version-release.git", brach: "patch-1"},
+      # {:version_release, "0.4.0", only: [:test, :dev], runtime: false},
       {:mox, "~> 1.0", only: :test}
     ]
   end
