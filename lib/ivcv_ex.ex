@@ -1,6 +1,8 @@
 defmodule IvcvEx do
   require Logger
 
+  alias IvcvEx.Result
+
   @moduledoc """
   Documentation for `IvcvEx`.
   """
@@ -44,19 +46,41 @@ defmodule IvcvEx do
     |> parse_response()
   end
 
+  def get_analysis_result(result_id) do
+    path = "/result"
+    auth_api_key = Application.get_env(:ivcv_ex, :auth_key)
+    http_client = Application.get_env(:ivcv_ex, :http_client)
+
+    base_url = Application.get_env(:ivcv_ex, :base_url)
+    url = base_url <> path
+
+    body =
+      URI.encode_query(%{
+        "result_id" => result_id
+      })
+
+    headers = [
+      {"Content-Type", "application/json"},
+      {"Authorization", auth_api_key}
+    ]
+
+    http_client.post(url, body, headers)
+    |> parse_response()
+  end
+
   defp parse_response({:ok, %HTTPoison.Response{status_code: 200, body: body}}) do
     body
-    |> Jason.decode!()
+    |> Jason.decode()
     |> case do
-      %{"resultId" => result_id} ->
-        {:ok, result_id}
+      {:ok, response} ->
+        Result.parse(response)
 
-      res ->
+      {:error, reason} ->
         Logger.error(
-          "#{inspect(__MODULE__)} something went wrong, could not decode response: #{inspect(res, pretty: true)}"
+          "#{inspect(__MODULE__)} something went wrong, could not decode response: #{inspect(reason, pretty: true)}"
         )
 
-        {:error, res}
+        {:error, reason}
     end
   end
 
