@@ -2,6 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+### Added
+* get video analisys result endpoint
 
 ## [0.5.4] - 2023-3-31
 
