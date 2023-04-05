@@ -3,6 +3,9 @@
 
 ## [Unreleased] - ReleaseDate
 ### Dependencies
+* version_release 0.5.0 => 0.5.1
+
+## [0.6.0] - 2023-3-31
 * version_release v0.5.0
 
 ## [0.5.4] - 2023-3-31
