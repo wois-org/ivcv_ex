@@ -2,6 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+### Dependencies
+* version_release v0.5.0
 
 ## [0.5.4] - 2023-3-31
 
