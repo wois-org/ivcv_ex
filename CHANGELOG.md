@@ -2,6 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+
+## [0.7.0] - 2023-4-5
 ### Fix
 * enabled hex force publish config for version_release
 
@@ -32,7 +34,8 @@
 * Initial setup
 
 <!-- next-url -->
-[Unreleased]: https://github.com/wois-org/papelillo/compare/v0.6.0...HEAD
+[Unreleased]: https://github.com/wois-org/papelillo/compare/v0.7.0...HEAD
+[0.7.0]: https://github.com/wois-org/papelillo/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/wois-org/papelillo/compare/v0.5.4...v0.6.0
 [0.5.4]: https://github.com/wois-org/papelillo/compare/v0.5.3...v0.5.4
 [0.5.3]: https://github.com/wois-org/papelillo/compare/v0.5.2...v0.5.3
