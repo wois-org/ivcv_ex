@@ -4,7 +4,7 @@ defmodule IvcvEx.MixProject do
   def project do
     [
       app: :ivcv_ex,
-      version: "0.5.4",
+      version: "0.8.1-alpha.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -47,7 +47,7 @@ defmodule IvcvEx.MixProject do
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:excoveralls, "0.16.1", only: :test},
-      {:version_release, "0.4.0", only: [:test, :dev], runtime: false},
+      {:version_release, "0.5.2", only: [:test, :dev], runtime: false},
       {:mox, "~> 1.0", only: :test}
     ]
   end

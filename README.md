@@ -1,5 +1,8 @@
 # IvcvEx
 
+<!-- ![GitHub release (latest by date)](https://img.shields.io/github/v/release/bulld0zer/ivcv_ex) -->
+![Hex.pm](https://img.shields.io/hexpm/v/ivcv_ex)
+![Hex.pm](https://img.shields.io/hexpm/dt/ivcv_ex)
 [![Docs](https://img.shields.io/badge/hex-docs-blue)](https://wois.hexdocs.pm/ivcv_ex/)
 
 IvcvEx is an unofficial client library for [IVCV](https://ivcv.eu/), so you can request video analysis and later fetch the results.

@@ -5,6 +5,22 @@
 ### Added
 * get video analisys result endpoint
 
+## [0.8.0] - 2023-4-5
+### Dependencies
+* version_release 0.5.1 => 0.5.2
+
+## [0.7.2] - 2023-4-5
+
+## [0.7.1] - 2023-4-5
+
+## [0.7.0] - 2023-4-5
+### Fix
+* enabled hex force publish config for version_release
+
+## [0.6.0] - 2023-4-5
+### Dependencies
+* version_release 0.5.0 => 0.5.1
+
 ## [0.5.4] - 2023-3-31
 
 ## [0.5.3] - 2023-3-31
@@ -28,7 +44,12 @@
 * Initial setup
 
 <!-- next-url -->
-[Unreleased]: https://github.com/wois-org/papelillo/compare/v0.5.4...HEAD
+[Unreleased]: https://github.com/wois-org/papelillo/compare/v0.8.0...HEAD
+[0.8.0]: https://github.com/wois-org/papelillo/compare/v0.7.2...v0.8.0
+[0.7.2]: https://github.com/wois-org/papelillo/compare/v0.7.1...v0.7.2
+[0.7.1]: https://github.com/wois-org/papelillo/compare/v0.7.0...v0.7.1
+[0.7.0]: https://github.com/wois-org/papelillo/compare/v0.6.0...v0.7.0
+[0.6.0]: https://github.com/wois-org/papelillo/compare/v0.5.4...v0.6.0
 [0.5.4]: https://github.com/wois-org/papelillo/compare/v0.5.3...v0.5.4
 [0.5.3]: https://github.com/wois-org/papelillo/compare/v0.5.2...v0.5.3
 [0.5.2]: https://github.com/wois-org/papelillo/compare/v0.5.1...v0.5.2
