@@ -2,6 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+
+## [0.8.1-rc.0] - 2023-4-17
 ### Added
 * get video analisys result endpoint
 
@@ -44,7 +46,8 @@
 * Initial setup
 
 <!-- next-url -->
-[Unreleased]: https://github.com/wois-org/papelillo/compare/v0.8.0...HEAD
+[Unreleased]: https://github.com/wois-org/ivcv_ex/compare/v0.8.1-rc.0...HEAD
+[0.8.1-rc.0]: https://github.com/wois-org/papelillo/compare/v0.8.0...v0.8.1-rc.0
 [0.8.0]: https://github.com/wois-org/papelillo/compare/v0.7.2...v0.8.0
 [0.7.2]: https://github.com/wois-org/papelillo/compare/v0.7.1...v0.7.2
 [0.7.1]: https://github.com/wois-org/papelillo/compare/v0.7.0...v0.7.1
