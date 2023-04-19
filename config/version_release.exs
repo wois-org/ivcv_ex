@@ -35,15 +35,4 @@ config :version_release,
     pre_release_replacements: replacements
   },
   commit_message: "[skip ci][version_release] {{message}}",
-  dev_version: true,
-  merge: %{
-    ignore_conflicts: true,
-    branches: [
-      %{
-        from: "master",
-        to: ["develop"],
-        strategy: ["recursive", "--strategy-option", "theirs"],
-        message: "[skip ci] Merge branch '{{from}}' into {{to}}"
-      }
-    ]
-  }
+  dev_version: true
