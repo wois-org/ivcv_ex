@@ -2,6 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+### Fix
+* log message on ivcv error request
 
 ## [0.15.0] - 2023-4-19
 ### Fix

@@ -110,7 +110,7 @@ defmodule IvcvEx do
   end
 
   defp parse_response({:ok, %HTTPoison.Response{status_code: status_code} = resp}) do
-    Logger.error("Cointraffic responded with code: #{status_code}", response: resp)
+    Logger.error("IVCV responded with code: #{status_code}", response: resp)
     {:error, "provider_response_status_code_#{status_code}"}
   end
 
