@@ -2,6 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+### Fix
+* github actions configuration, set remote origin url properly
 
 ## [0.12.0] - 2023-4-19
 ### Fix
