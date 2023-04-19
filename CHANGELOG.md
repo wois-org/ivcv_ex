@@ -61,8 +61,12 @@
 * Initial setup
 
 <!-- next-url -->
+<<<<<<< HEAD
 [Unreleased]: https://github.com/wois-org/ivcv_ex/compare/v0.11.0...HEAD
 [0.11.0]: https://github.com/wois-org/ivcv_ex/compare/v0.10.0...v0.11.0
+=======
+[Unreleased]: https://github.com/wois-org/ivcv_ex/compare/v0.10.0...HEAD
+>>>>>>> a4633382adbeb90935464701635cbb9da974e9a5
 [0.10.0]: https://github.com/wois-org/ivcv_ex/compare/v0.9.0...v0.10.0
 [0.9.0]: https://github.com/wois-org/ivcv_ex/compare/v0.8.1-rc.0...v0.9.0
 [0.8.1-rc.0]: https://github.com/wois-org/papelillo/compare/v0.8.0...v0.8.1-rc.0
