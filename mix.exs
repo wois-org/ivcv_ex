@@ -28,7 +28,7 @@ defmodule IvcvEx.MixProject do
   end
 
   defp description() do
-    "Unofficial IVCV Client Library"
+    "IVCV Client Library"
   end
 
   defp package() do
