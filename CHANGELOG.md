@@ -4,6 +4,7 @@
 ## [Unreleased] - ReleaseDate
 ### Fix
 * version release configuration, no need to maintain develop branch
+* github actions configuration
 
 ## [0.10.0] - 2023-4-19
 ### Fix
