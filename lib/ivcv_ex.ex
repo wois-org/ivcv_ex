@@ -130,7 +130,7 @@ defmodule IvcvEx do
       "#{inspect(__MODULE__)} Internal server error, returned: #{inspect(body, pretty: true)}"
     )
 
-    {:error, "video analysis filed"}
+    {:error, "video analysis failed"}
   end
 
   defp parse_response({:error, %HTTPoison.Error{reason: reason}}) do
