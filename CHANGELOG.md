@@ -3,7 +3,7 @@
 
 ## [Unreleased] - ReleaseDate
 ### Fix
-* description and readme
+* log message on ivcv error request
 
 ## [0.15.0] - 2023-4-19
 ### Fix
