@@ -2,6 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+### Added
+* stub for video analysis request error
 
 ## [0.8.1-rc.0] - 2023-4-17
 ### Added

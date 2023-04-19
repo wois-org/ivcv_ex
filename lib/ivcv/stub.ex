@@ -29,4 +29,29 @@ defmodule IvcvEx.Stub do
          |> Jason.encode!()
      }}
   end
+
+  def get_analysis_result_error() do
+    {:ok,
+     %HTTPoison.Response{
+       status_code: 500,
+       body:
+         %{
+           "resultId" => "abc123",
+           "status" => "FAILED",
+           "impression" => %{
+             "neuroticism" => nil,
+             "extraversion" => nil,
+             "openness" => nil,
+             "conscientiousness" => nil,
+             "agreeableness" => nil
+           },
+           "emotions" => %{
+             "intensity" => nil,
+             "positivity" => nil
+           },
+           "sentiment" => nil
+         }
+         |> Jason.encode!()
+     }}
+  end
 end
