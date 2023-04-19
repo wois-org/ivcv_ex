@@ -125,6 +125,14 @@ defmodule IvcvEx do
     {:error, "not found"}
   end
 
+  defp parse_response({:ok, %HTTPoison.Response{status_code: _, body: body}}) do
+    Logger.error(
+      "#{inspect(__MODULE__)} Internal server error, returned: #{inspect(body, pretty: true)}"
+    )
+
+    {:error, "video stats filed"}
+  end
+
   defp parse_response({:error, %HTTPoison.Error{reason: reason}}) do
     {:error, reason}
   end
