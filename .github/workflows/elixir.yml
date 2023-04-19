@@ -56,7 +56,7 @@ jobs:
       run: |
         git config user.name vois-circleci-bot
         git config user.email circleci.voisbot@null.net
-        git remote set-url origin https://${{ secrets.BOT_PAT }}@github.com/${{ github.repository }}
+        git remote set-url origin https://vois-circleci-bot@github.com/${{ github.repository }}
     - name: Restore dependencies cache
       id: cache-deps
       uses: actions/cache@v3
