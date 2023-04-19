@@ -114,6 +114,14 @@ defmodule IvcvEx do
     {:error, "provider_response_status_code_#{status_code}"}
   end
 
+  defp parse_response({:ok, %HTTPoison.Response{status_code: _, body: body}}) do
+    Logger.error(
+      "#{inspect(__MODULE__)} Internal server error, returned: #{inspect(body, pretty: true)}"
+    )
+
+    {:error, "video analysis failed"}
+  end
+
   defp parse_response({:error, %HTTPoison.Error{reason: reason}}) do
     {:error, reason}
   end
