@@ -3,7 +3,7 @@
 
 ## [Unreleased] - ReleaseDate
 ### Fix
-* temporary remove spec to fix dialyzer in child projects
+* body request for videoUrl on video processing
 
 ## [0.16.0] - 2023-4-19
 ### Fix
