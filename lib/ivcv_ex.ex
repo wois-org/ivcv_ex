@@ -23,7 +23,6 @@ defmodule IvcvEx do
   ## Reference
     https://docs.ivcv.eu/result_for_video.html#blueprints.direct_blueprints.process_video_by_url
   """
-  @spec process_video_by_url(binary()) :: {:ok, binary()} | {:error, any()}
   def process_video_by_url(video_url) when is_binary(video_url) do
     path = "/video"
     auth_api_key = Application.get_env(:ivcv_ex, :auth_key)
