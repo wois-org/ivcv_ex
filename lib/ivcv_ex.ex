@@ -33,7 +33,7 @@ defmodule IvcvEx do
 
     body =
       URI.encode_query(%{
-        "video_url" => video_url
+        "videoUrl" => video_url
       })
 
     headers = [

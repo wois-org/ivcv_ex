@@ -2,6 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+### Fix
+* body request for videoUrl on video processing
 
 ## [0.17.0] - 2023-4-21
 ### Fix
