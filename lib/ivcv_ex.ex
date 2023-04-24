@@ -29,19 +29,19 @@ defmodule IvcvEx do
     http_client = Application.get_env(:ivcv_ex, :http_client)
 
     base_url = Application.get_env(:ivcv_ex, :base_url)
+
     url = base_url <> path
 
     body =
-      URI.encode_query(%{
-        "videoUrl" => video_url
-      })
+      %{"videoUrl" => video_url}
+      |> Jason.encode!()
 
     headers = [
       {"Content-Type", "application/json"},
       {"Authorization", auth_api_key}
     ]
 
-    http_client.post(url, body, headers)
+    http_client.post(url, body, headers, recv_timeout: 15_000)
     |> parse_response()
   end
 
@@ -76,19 +76,19 @@ defmodule IvcvEx do
     http_client = Application.get_env(:ivcv_ex, :http_client)
 
     base_url = Application.get_env(:ivcv_ex, :base_url)
+
     url = base_url <> path
 
     body =
-      URI.encode_query(%{
-        "result_id" => result_id
-      })
+      %{"resultId" => result_id}
+      |> Jason.encode!()
 
     headers = [
       {"Content-Type", "application/json"},
       {"Authorization", auth_api_key}
     ]
 
-    http_client.post(url, body, headers)
+    http_client.post(url, body, headers, recv_timeout: 15_000)
     |> parse_response()
   end
 

@@ -9,7 +9,7 @@ defmodule IvcvExTest do
 
   describe "request video processing" do
     test "with correct params" do
-      expect(HTTPoisonMock, :post, 1, fn _url, _body, _headers ->
+      expect(HTTPoisonMock, :post, 1, fn _url, _body, _headers, _opts ->
         IvcvEx.Stub.process_video_ok()
       end)
 
@@ -19,7 +19,7 @@ defmodule IvcvExTest do
 
   describe "get video analysis result" do
     test "with correct params" do
-      expect(HTTPoisonMock, :post, 1, fn _url, _body, _headers ->
+      expect(HTTPoisonMock, :post, 1, fn _url, _body, _headers, _opts ->
         IvcvEx.Stub.get_analysis_result_ok()
       end)
 

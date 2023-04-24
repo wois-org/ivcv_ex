@@ -2,6 +2,9 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+### Fix
+* request body parameters
+* increased receive timeout to 15 seconds
 
 ## [0.18.0] - 2023-4-21
 ### Fix
