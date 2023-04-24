@@ -111,10 +111,12 @@ defmodule IvcvEx.Result do
   end
 
   def parse(%{
+        "status" => status,
         "resultId" => result_id
       }) do
     {:ok,
      %{
+       status: status,
        result_id: result_id
      }}
   end

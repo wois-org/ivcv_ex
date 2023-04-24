@@ -76,12 +76,12 @@ defmodule IvcvEx do
     http_client = Application.get_env(:ivcv_ex, :http_client)
 
     base_url = Application.get_env(:ivcv_ex, :base_url)
+
     url = base_url <> path
 
     body =
-      URI.encode_query(%{
-        "result_id" => result_id
-      })
+      %{"resultId" => result_id}
+      |> Jason.encode!()
 
     headers = [
       {"Content-Type", "application/json"},
