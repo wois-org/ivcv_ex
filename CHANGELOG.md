@@ -2,6 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+### Added
+* stub for video processing failed 
 
 ## [0.20.0] - 2023-4-25
 ### Fix
