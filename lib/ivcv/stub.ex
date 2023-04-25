@@ -30,6 +30,19 @@ defmodule IvcvEx.Stub do
      }}
   end
 
+  def get_analysis_result_failed() do
+    {:ok,
+     %HTTPoison.Response{
+       status_code: 200,
+       body:
+         %{
+           "resultId" => "abc123",
+           "status" => "FAILED",
+         }
+         |> Jason.encode!()
+     }}
+  end
+
   def get_analysis_result_error() do
     {:ok,
      %HTTPoison.Response{
@@ -38,18 +51,6 @@ defmodule IvcvEx.Stub do
          %{
            "resultId" => "abc123",
            "status" => "FAILED",
-           "impression" => %{
-             "neuroticism" => nil,
-             "extraversion" => nil,
-             "openness" => nil,
-             "conscientiousness" => nil,
-             "agreeableness" => nil
-           },
-           "emotions" => %{
-             "intensity" => nil,
-             "positivity" => nil
-           },
-           "sentiment" => nil
          }
          |> Jason.encode!()
      }}
