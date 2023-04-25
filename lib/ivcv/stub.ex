@@ -2,7 +2,7 @@ defmodule IvcvEx.Stub do
   @moduledoc false
   def process_video_ok() do
     {:ok,
-      %HTTPoison.Response{status_code: 200, body: %{"resultId" => "abc123", "status" => "PROCESSING"} |> Jason.encode!()}}
+     %HTTPoison.Response{status_code: 200, body: %{"resultId" => "abc123"} |> Jason.encode!()}}
   end
 
   def get_analysis_result_ok() do

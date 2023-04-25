@@ -2,6 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+### Fix
+* parse video_processing_by_url result
 
 ## [0.19.0] - 2023-4-24
 ### Fix
