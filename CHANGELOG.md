@@ -2,6 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+
+## [0.20.0] - 2023-4-25
 ### Fix
 * parse video_processing_by_url result
 
@@ -94,7 +96,8 @@
 * Initial setup
 
 <!-- next-url -->
-[Unreleased]: https://github.com/wois-org/ivcv_ex/compare/v0.19.0...HEAD
+[Unreleased]: https://github.com/wois-org/ivcv_ex/compare/v0.20.0...HEAD
+[0.20.0]: https://github.com/wois-org/ivcv_ex/compare/v0.19.0...v0.20.0
 [0.19.0]: https://github.com/wois-org/ivcv_ex/compare/v0.18.0...v0.19.0
 [0.18.0]: https://github.com/wois-org/ivcv_ex/compare/v0.17.0...v0.18.0
 [0.17.0]: https://github.com/wois-org/ivcv_ex/compare/v0.16.0...v0.17.0
