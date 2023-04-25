@@ -121,6 +121,15 @@ defmodule IvcvEx.Result do
      }}
   end
 
+  def parse(%{
+        "resultId" => result_id
+      }) do
+    {:ok,
+     %{
+       result_id: result_id
+     }}
+  end
+
   def parse(input) do
     Logger.error(
       "#{inspect(__MODULE__)} something went wrong, could not parse input: #{inspect(input, pretty: true)}"
