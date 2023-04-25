@@ -2,8 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
-### Fix
-* parse video_processing_by_url result
+### Added
+* stub for video processing failed 
 
 ## [0.20.0] - 2023-4-25
 ### Fix
