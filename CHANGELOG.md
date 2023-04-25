@@ -3,6 +3,10 @@
 
 ## [Unreleased] - ReleaseDate
 ### Fix
+* parse video_processing_by_url result
+
+## [0.19.0] - 2023-4-24
+### Fix
 * request body parameters
 * increased receive timeout to 15 seconds
 
@@ -90,7 +94,8 @@
 * Initial setup
 
 <!-- next-url -->
-[Unreleased]: https://github.com/wois-org/ivcv_ex/compare/v0.18.0...HEAD
+[Unreleased]: https://github.com/wois-org/ivcv_ex/compare/v0.19.0...HEAD
+[0.19.0]: https://github.com/wois-org/ivcv_ex/compare/v0.18.0...v0.19.0
 [0.18.0]: https://github.com/wois-org/ivcv_ex/compare/v0.17.0...v0.18.0
 [0.17.0]: https://github.com/wois-org/ivcv_ex/compare/v0.16.0...v0.17.0
 [0.16.0]: https://github.com/wois-org/ivcv_ex/compare/v0.15.0...v0.16.0
