@@ -30,6 +30,19 @@ defmodule IvcvEx.Stub do
      }}
   end
 
+  def get_analysis_result_processing() do
+    {:ok,
+     %HTTPoison.Response{
+       status_code: 200,
+       body:
+         %{
+           "resultId" => "abc123",
+           "status" => "PROCESSING"
+         }
+         |> Jason.encode!()
+     }}
+  end
+
   def get_analysis_result_failed() do
     {:ok,
      %HTTPoison.Response{
@@ -37,7 +50,7 @@ defmodule IvcvEx.Stub do
        body:
          %{
            "resultId" => "abc123",
-           "status" => "FAILED",
+           "status" => "FAILED"
          }
          |> Jason.encode!()
      }}
@@ -50,7 +63,7 @@ defmodule IvcvEx.Stub do
        body:
          %{
            "resultId" => "abc123",
-           "status" => "FAILED",
+           "status" => "FAILED"
          }
          |> Jason.encode!()
      }}
