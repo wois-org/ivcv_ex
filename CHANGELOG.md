@@ -3,7 +3,7 @@
 
 ## [Unreleased] - ReleaseDate
 ### Added
-* stub for video processing failed 
+* stub for video processing with status PROCESSING 
 
 ## [0.21.0] - 2023-4-25
 ### Added
