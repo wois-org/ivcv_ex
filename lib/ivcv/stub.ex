@@ -24,7 +24,15 @@ defmodule IvcvEx.Stub do
              "intensity" => 46,
              "positivity" => 11
            },
-           "sentiment" => 61
+           "sentiment" => 61,
+           "eyeContact" => 0.67,
+           "confidence" => 62,
+           "pitchAverage" => 109,
+           "pitchStd" => 27,
+           "wordsPerMin" => 44,
+           "numOfPauses" => 8,
+           "pitchMeanLevel" => "low",
+           "pitchStdLevel" => "medium"
          }
          |> Jason.encode!()
      }}
