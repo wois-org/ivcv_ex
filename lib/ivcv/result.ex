@@ -105,7 +105,7 @@ defmodule IvcvEx.Result do
           confidence: integer(),
           pitch_average: integer(),
           pitch_std: integer(),
-          words_per_min: integer(),
+          words_per_min: float(),
           num_of_pauses: integer(),
           pitch_mean_level: String.t(),
           pitch_std_level: String.t()
