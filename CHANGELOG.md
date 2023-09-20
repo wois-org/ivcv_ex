@@ -2,6 +2,16 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+### Added
+* extra field to the structure of IVCV analysis result
+    - eye_contact
+    - confidence
+    - pitch_average
+    - pitch_std
+    - words_per_min
+    - num_of_pauses
+    - pitch_mean_level
+    - pitch_std_level
 
 ## [0.22.0] - 2023-4-26
 ### Added

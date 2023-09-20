@@ -65,11 +65,28 @@ defmodule IvcvEx.Result do
 
     impression (Impression.t()) - First impression analysis with Big Five metrics. Integer values between 0 to 100.
 
-    sentiment (float) - Sentiment analysis result. Integer value between 0 to 100.
+    sentiment (integer) - Sentiment analysis result. Integer value between 0 to 100.
+
+    eyeContact (float) - Eye contact ratio of the person during the video. Float value between 0 to 1.
+
+    confidence (int) - Confidence level of the person. Integer value between 0 to 100.
+
+    pitchAverage (int) - Average pitch of the speech. Integer value between 75 to 600.
+
+    pitchStd (int) - Standard deviation of the pitch. Integer value between 0 to 600.
+
+    pitchAverageLevel (string) - Level of pitch average. One of “low”, “medium”, “high”.
+
+    pitchStdLevel (string) - Level of pitch std. One of “low”, “medium”, “high”.
+
+    wordsPerMin (float) - Words per minute spoken by the person.
+
+    numOfPauses (int) - Number of pauses during the speech. Minimum pause duration is 0.3 seconds.
 
     status (string) - Current status of the processing. One of FINISHED, PROCESSING, FAILED.
 
     resultId (string) - Id of the result.
+
   """
   require Logger
 
@@ -83,14 +100,30 @@ defmodule IvcvEx.Result do
           status: String.t(),
           impression: Impression,
           emotions: Emotions,
-          sentiment: float()
+          sentiment: integer(),
+          eye_contact: float(),
+          confidence: integer(),
+          pitch_average: integer(),
+          pitch_std: integer(),
+          words_per_min: float(),
+          num_of_pauses: integer(),
+          pitch_mean_level: String.t(),
+          pitch_std_level: String.t()
         }
   defstruct [
     :result_id,
     :status,
     :impression,
     :emotions,
-    :sentiment
+    :sentiment,
+    :eye_contact,
+    :confidence,
+    :pitch_average,
+    :pitch_std,
+    :words_per_min,
+    :num_of_pauses,
+    :pitch_mean_level,
+    :pitch_std_level
   ]
 
   def parse(%{
@@ -98,7 +131,15 @@ defmodule IvcvEx.Result do
         "status" => status,
         "impression" => impression,
         "emotions" => emotions,
-        "sentiment" => sentiment
+        "sentiment" => sentiment,
+        "eyeContact" => eye_contact,
+        "confidence" => confidence,
+        "pitchAverage" => pitch_average,
+        "pitchStd" => pitch_std,
+        "wordsPerMin" => words_per_min,
+        "numOfPauses" => num_of_pauses,
+        "pitchMeanLevel" => pitch_mean_level,
+        "pitchStdLevel" => pitch_std_level
       }) do
     {:ok,
      %Result{
@@ -106,7 +147,15 @@ defmodule IvcvEx.Result do
        status: status,
        impression: Impression.parse(impression),
        emotions: Emotions.parse(emotions),
-       sentiment: sentiment
+       sentiment: sentiment,
+       eye_contact: eye_contact,
+       confidence: confidence,
+       pitch_average: pitch_average,
+       pitch_std: pitch_std,
+       words_per_min: words_per_min,
+       num_of_pauses: num_of_pauses,
+       pitch_mean_level: pitch_mean_level,
+       pitch_std_level: pitch_std_level
      }}
   end
 
