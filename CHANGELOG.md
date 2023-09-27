@@ -2,6 +2,8 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+### Changed
+* updated ivcv result structure 
 
 ## [0.23.0] - 2023-9-20
 ### Added

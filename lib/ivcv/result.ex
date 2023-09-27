@@ -71,9 +71,9 @@ defmodule IvcvEx.Result do
 
     confidence (int) - Confidence level of the person. Integer value between 0 to 100.
 
-    pitchAverage (int) - Average pitch of the speech. Integer value between 75 to 600.
+    pitchAverage (float) - Average pitch of the speech. Integer value between 75 to 600.
 
-    pitchStd (int) - Standard deviation of the pitch. Integer value between 0 to 600.
+    pitchStd (float) - Standard deviation of the pitch. Integer value between 0 to 600.
 
     pitchAverageLevel (string) - Level of pitch average. One of “low”, “medium”, “high”.
 
@@ -82,6 +82,8 @@ defmodule IvcvEx.Result do
     wordsPerMin (float) - Words per minute spoken by the person.
 
     numOfPauses (int) - Number of pauses during the speech. Minimum pause duration is 0.3 seconds.
+
+    pausesPerMin (float) - Pauses per minute during the speech.
 
     status (string) - Current status of the processing. One of FINISHED, PROCESSING, FAILED.
 
@@ -103,12 +105,13 @@ defmodule IvcvEx.Result do
           sentiment: integer(),
           eye_contact: float(),
           confidence: integer(),
-          pitch_average: integer(),
-          pitch_std: integer(),
+          pitch_average: float(),
+          pitch_std: float(),
+          pitch_average_level: String.t(),
+          pitch_std_level: String.t(),
           words_per_min: float(),
           num_of_pauses: integer(),
-          pitch_mean_level: String.t(),
-          pitch_std_level: String.t()
+          pauses_per_min: float()
         }
   defstruct [
     :result_id,
@@ -120,10 +123,11 @@ defmodule IvcvEx.Result do
     :confidence,
     :pitch_average,
     :pitch_std,
+    :pitch_average_level,
+    :pitch_std_level,
     :words_per_min,
     :num_of_pauses,
-    :pitch_mean_level,
-    :pitch_std_level
+    :pauses_per_min
   ]
 
   def parse(%{
@@ -136,10 +140,11 @@ defmodule IvcvEx.Result do
         "confidence" => confidence,
         "pitchAverage" => pitch_average,
         "pitchStd" => pitch_std,
+        "pitchAverageLevel" => pitch_mean_level,
+        "pitchStdLevel" => pitch_std_level,
         "wordsPerMin" => words_per_min,
         "numOfPauses" => num_of_pauses,
-        "pitchMeanLevel" => pitch_mean_level,
-        "pitchStdLevel" => pitch_std_level
+        "pausesPerMin" => pauses_per_min
       }) do
     {:ok,
      %Result{
@@ -152,10 +157,11 @@ defmodule IvcvEx.Result do
        confidence: confidence,
        pitch_average: pitch_average,
        pitch_std: pitch_std,
+       pitch_average_level: pitch_mean_level,
+       pitch_std_level: pitch_std_level,
        words_per_min: words_per_min,
        num_of_pauses: num_of_pauses,
-       pitch_mean_level: pitch_mean_level,
-       pitch_std_level: pitch_std_level
+       pauses_per_min: pauses_per_min
      }}
   end
 
