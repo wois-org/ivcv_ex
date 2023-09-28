@@ -3,6 +3,8 @@
 
 ## [Unreleased] - ReleaseDate
 
+## [0.24.0] - 2023-9-28
+
 ## [0.23.1-rc.0] - 2023-9-27
 ### Changed
 * updated ivcv result structure 
@@ -120,7 +122,8 @@
 * Initial setup
 
 <!-- next-url -->
-[Unreleased]: https://github.com/wois-org/ivcv_ex/compare/v0.23.1-rc.0...HEAD
+[Unreleased]: https://github.com/wois-org/ivcv_ex/compare/v0.24.0...HEAD
+[0.24.0]: https://github.com/wois-org/ivcv_ex/compare/v0.23.1-rc.0...v0.24.0
 [0.23.1-rc.0]: https://github.com/wois-org/ivcv_ex/compare/v0.23.0...v0.23.1-rc.0
 [0.23.0]: https://github.com/wois-org/ivcv_ex/compare/v0.22.0...v0.23.0
 [0.22.0]: https://github.com/wois-org/ivcv_ex/compare/v0.21.0...v0.22.0
