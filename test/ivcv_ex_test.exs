@@ -38,12 +38,12 @@ defmodule IvcvExTest do
                 sentiment: 61,
                 eye_contact: 0.67,
                 confidence: 62,
-                pitch_average: 109,
-                pitch_std: 27,
-                words_per_min: 44,
+                pitch_average: 109.0,
+                pitch_average_level: "low",
+                pitch_std_level: "medium",
+                words_per_min: 44.0,
                 num_of_pauses: 8,
-                pitch_mean_level: "low",
-                pitch_std_level: "medium"
+                pauses_per_min: 2.0
               }} = IvcvEx.process_video_by_url("https://video_url")
     end
   end
